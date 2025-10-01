@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Classificador de Emails</h1>
+
+    <form id="emailForm">
+        <textarea name="text" placeholder="Digite o email aqui..."></textarea><br>
+        <input type="file" name="file" accept=".txt,.pdf"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
